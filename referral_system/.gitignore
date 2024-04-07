@@ -1,0 +1,33 @@
+.env
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore migration files
+/migrations/
+
+# Ignore static and media files
+/staticfiles/
+/media/
+
+# Ignore log files
+*.log
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore virtual environment
+/venv/
+.env/
+
+# Ignore dependency files
+*.lock
+*.egg-info/
+/dist/
+.build/
