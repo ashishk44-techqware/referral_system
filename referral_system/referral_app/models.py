@@ -21,7 +21,7 @@ class UserProfile(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return str(self.user.email)+"with referral_code"+str(self.referral_code)
+        return str(self.user.email)+" referral_code :- "+str(self.referral_code)
 
 class Referral(models.Model):
     referred_user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='referrals')
@@ -29,4 +29,4 @@ class Referral(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return str(self.referred_user.user.email)+"referr by"+str(self.referring_user.user.email)
+        return str(self.referred_user.user.email)+" referr by "+str(self.referring_user.user.email)
