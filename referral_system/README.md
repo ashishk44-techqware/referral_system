@@ -27,8 +27,16 @@ Once pip has finished downloading the dependencies:
 
 ```If you want to register as a User http://127.0.0.1:8000/api/v1/register ```
 
+# Create docker repo:
+
+- docker build -t ashishk44/referral_system:referral_system .
+- docker push ashishk44/referral_system:referral_system
+
+# Share dockerimage to other
+- docker pull ashishk44/referral_system:referral_system
 
 # Docker comands to run
-- docker build -t referral_system . 
-- docker run -p 8000:8000 referral_system
+- docker build -t ashishk44/referral_system:referral_system .
+- docker run -p 8000:8000 ashishk44/referral_system: referral_system
+
 
